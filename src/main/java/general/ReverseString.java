@@ -1,3 +1,5 @@
+package general;
+
 public class ReverseString {
     public static String reverse(String str){
         StringBuilder strBr=new StringBuilder("");
