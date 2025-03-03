@@ -13,4 +13,16 @@ public class ReverseNumber {
         }
         System.out.println("reverse number is "+reverse);
     }
+
+    public static int maxNum(int ...num){
+        if(num.length==0)return Integer.MIN_VALUE;
+        int m=num[0];
+        for(int n: num){
+            if(n>m){
+                m=n;
+            }
+        }
+        return m;
+    }
+
 }
