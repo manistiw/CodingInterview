@@ -6,12 +6,12 @@ Return true if it is possible to make the goal by choosing from the given bricks
  */
 public class makeBricks {
     public static void main(String args[]){
-        System.out.println(makeBricks(3,1,8));
-        System.out.println(makeBricks(3,1,9));
-        System.out.println(makeBricks(3,2,10));
+        //System.out.println(makeBricks(3,1,8));
+        //System.out.println(makeBricks(3,1,9));
+        System.out.println(makeBricks(3,2,9));
 
     }
     public static boolean makeBricks(int small, int big,int goal){
-        return small*1+big*5>=goal?true:false;
+        return small>=goal-Math.min(big,goal/5)*5?true:false;
     }
 }
