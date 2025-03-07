@@ -12,5 +12,14 @@ caughtSpeeding(65, false) → 1
 caughtSpeeding(65, true) → 0
  */
 public class caughtSpeed {
+    public int caughtSpeeding(int speed, boolean isBirthday) {
+        //0- no ticket 1- small ticket, 2-=big ticket
+        if(isBirthday){speed=speed-5;}
+        if(speed>=0 && speed<=60){ return 0;}
+        if(speed>60 && speed<=80){ return 1;}
+        return 2;
+
+
+    }
 
 }
